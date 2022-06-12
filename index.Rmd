@@ -61,7 +61,7 @@ meta() %>%
   meta_name("github-repo" = "chris-gaskell/neuro.roms") %>% 
   meta_social(
     title = "Measuring change in neuropsychology",
-    url = "https://chris-gaskell.github.io/neuro.roms",
+    url = "https://neuro-roms.netlify.app",
     #image = "",
     image_alt = paste(
       "Cover image for teaching/presentation:",
