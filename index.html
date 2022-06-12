@@ -8,7 +8,7 @@
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
     <link href="libs/remark-css/hygge.css" rel="stylesheet" />
-    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"x7c40d2f857e42c9a108f9399dfbcf11","expires":14}</script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xed2a18867c940b691bb15c5a70b05c4","expires":14}</script>
     <script src="libs/himalaya/himalaya.js"></script>
     <script src="libs/js-cookie/js.cookie.js"></script>
     <link href="libs/editable/editable.css" rel="stylesheet" />
@@ -33,6 +33,23 @@
     <script src="libs/shareon/shareon.min.js"></script>
     <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
     <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <meta name="description" content="Measuring change in neuropsychology"/>
+    <meta name="generator" content="xaringan and remark.js"/>
+    <meta name="github-repo" content="chris-gaskell/neuro.roms"/>
+    <meta name="twitter:title" content="Measuring change in neuropsychology"/>
+    <meta name="twitter:description" content="Measuring change in neuropsychology"/>
+    <meta name="twitter:url" content="https://chris-gaskell.github.io/neuro.roms"/>
+    <meta name="twitter:image:alt" content="Cover image for teaching/presentation: Measuring change in neuropsychology Teaching presented by Chris Gaskell"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="@cgaskell92"/>
+    <meta name="twitter:site" content="@cgaskell92"/>
+    <meta property="og:title" content="Measuring change in neuropsychology"/>
+    <meta property="og:description" content="Measuring change in neuropsychology"/>
+    <meta property="og:url" content="https://chris-gaskell.github.io/neuro.roms"/>
+    <meta property="og:image:alt" content="Cover image for teaching/presentation: Measuring change in neuropsychology Teaching presented by Chris Gaskell"/>
+    <meta property="og:type" content="slides"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="article:author" content="Chris Gaskell"/>
     <link rel="stylesheet" href="custom.css" type="text/css" />
     <link rel="stylesheet" href="fonts.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" type="text/css" />
@@ -64,6 +81,62 @@ class: top, center, title-slide
 
 
 
+<style>.xe__progress-bar__container {
+  top:0;
+  opacity: 1;
+  position:absolute;
+  right:0;
+  left: 0;
+}
+.xe__progress-bar {
+  height: 0.25em;
+  background-color: red;
+  width: calc(var(--slide-current) / var(--slide-total) * 100%);
+}
+.remark-visible .xe__progress-bar {
+  animation: xe__progress-bar__wipe 200ms forwards;
+  animation-timing-function: cubic-bezier(.86,0,.07,1);
+}
+@keyframes xe__progress-bar__wipe {
+  0% { width: calc(var(--slide-previous) / var(--slide-total) * 100%); }
+  100% { width: calc(var(--slide-current) / var(--slide-total) * 100%); }
+}</style><div>
+<style type="text/css">.xaringan-extra-logo {
+width: 110px;
+height: 128px;
+z-index: 0;
+background-image: url(https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+top:1em;right:1em;
+}
+</style>
+<script>(function () {
+  let tries = 0
+  function addLogo () {
+    if (typeof slideshow === 'undefined') {
+      tries += 1
+      if (tries < 10) {
+        setTimeout(addLogo, 100)
+      }
+    } else {
+      document.querySelectorAll('.remark-slide-content:not(.title-slide):not(.inverse):not(.hide_logo)')
+        .forEach(function (slide) {
+          const logo = document.createElement('div')
+          logo.classList = 'xaringan-extra-logo'
+          logo.href = null
+          slide.appendChild(logo)
+        })
+    }
+  }
+  document.addEventListener('DOMContentLoaded', addLogo)
+})()</script>
+</div>
+
+
+
+---
 class: center, middle, split-three, about-me-slide
 background-image: url(uos.png), url(pearls.jpg)
 background-position:5% 95%, 98% 96%

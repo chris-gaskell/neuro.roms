@@ -23,16 +23,19 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = F)
 options(htmltools.dir.version = FALSE)
 ```
 
 ```{r libs}
-library(xaringan, xaringanExtra, xaringanthemer, metathis, # Develop Slides
-        RColorBrewer, # colours
-        vembedr, # include iFrames
-        tidyverse, gganimate, ggExtra, # Data management / visualisation
-        )
+library(xaringan)
+library(xaringanExtra)
+library(metathis)
+library(RColorBrewer)
+library(vembedr)
+library(tidyverse)
+library(gganimate)
+library(ggExtra)
 ```
 
 ```{r xaringanExtra}
@@ -72,6 +75,7 @@ meta() %>%
   )
 ```
 
+---
 class: center, middle, split-three, about-me-slide
 background-image: url(uos.png), url(pearls.jpg)
 background-position:5% 95%, 98% 96%
