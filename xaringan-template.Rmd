@@ -1,0 +1,101 @@
+---
+title: 'Why it Matters to Measure'
+subtitle:
+  - 'subtitle'
+author:  'Dr. Chris Gaskell'
+institute: 'Northern Care Alliance'
+date: true
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["custom.css", "fonts.css", "default", "default-fonts", "hygge", "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"]
+    nature:
+      ratio: 16:9
+      titleSlideClass: ["top", "center"]
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+options(htmltools.dir.version = FALSE)
+```
+
+```{r libs}
+library(xaringan)
+library(xaringanExtra)
+library(metathis)
+library(RColorBrewer)
+library(vembedr)
+library(tidyverse)
+library(gganimate)
+library(ggExtra)
+```
+
+```{r xaringanExtra}
+xaringanExtra::use_editable()
+xaringanExtra::use_panelset()
+xaringanExtra::use_freezeframe()
+xaringanExtra::use_webcam()
+xaringanExtra::use_fit_screen()
+xaringanExtra::use_progress_bar(color = "red", location = "top")
+xaringanExtra::use_tile_view()
+xaringanExtra::use_scribble()
+#xaringanExtra::use_search(show_icon = T, auto_search = F, position = "")
+xaringanExtra::use_logo(image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png")
+xaringanExtra::use_share_again()
+```
+
+```{r metathis}
+meta() %>%
+  meta_general(
+    description = "Measuring change in neuropsychology",
+    generator = "xaringan and remark.js"
+  ) %>% 
+  meta_name("github-repo" = "chris-gaskell/neuro.roms") %>% 
+  meta_social(
+    title = "Measuring change in neuropsychology",
+    url = "https://neuro-roms.netlify.app",
+    #image = "",
+    image_alt = paste(
+      "Cover image for teaching/presentation:",
+      "Measuring change in neuropsychology",
+      "Teaching presented by Chris Gaskell"
+      ),
+    og_type = "slides",
+    og_author = "Chris Gaskell",
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@cgaskell92"
+  )
+```
+
+---
+class: center, middle, split-three, about-me-slide
+background-image: url(uos.png), url(pearls.jpg)
+background-position:5% 95%, 98% 96%
+background-size: 110px 50px, 10%
+
+---
+class: center, top, split-three, inverse
+background-image: url(https://rin.org.uk/resource/resmgr/nav21/nav21_map.png)
+background-position:8% 70%
+background-size: 375px 300px
+
+---
+class: inverse, middle, center
+#  End of Day one
+
+
+```{r output, include=F, echo=F}
+#xaringanBuilder::build_pptx("index.Rmd",
+#        complex_slides = T, partial_slides = F)
+```
+
+
+
